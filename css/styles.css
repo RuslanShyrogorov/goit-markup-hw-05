@@ -201,6 +201,9 @@ ul {
   text-align: left;
   letter-spacing: 0.02em;
 }
+.main-nav .link{
+  transition: color var(--time-animation) var(--animation);
+}
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
   color: var(--accent-text-color);
@@ -285,6 +288,8 @@ ul {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color var(--time-animation) var(--animation);
 }
 .button.hero:hover,
 .button.hero:focus {
@@ -457,14 +462,16 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  transition: background-color var(--time-animation) var(--animation);
 }
 .social-list-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.our-team .social-list-icon {
   fill: var(--svg-fill-color);
+  
+  transition: fill var(--time-animation) var(--animation);
 }
 .our-team .social-list-link:hover .social-list-icon,
 .our-team .social-list-link:focus .social-list-icon {
@@ -514,7 +521,14 @@ ul {
   border: 1px solid var(--svg-fill-color);
   border-radius: 4px;
   fill: var(--svg-fill-color);
+
+  transition: border var(--time-animation) var(--animation);
 }
+
+.client-icon{
+  transition: fill var(--time-animation) var(--animation);
+}
+
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-text-color);
@@ -548,9 +562,11 @@ ul {
 }
 .footer .addres {
   color: var(--bgc-primary-color);
+  transition: color var(--time-animation) var(--animation);
 }
 .footer .contacts {
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-animation) var(--animation);
 }
 .footer .link:hover,
 .footer .link:focus {
@@ -582,6 +598,7 @@ ul {
 .footer .social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .footer .social-list-link:hover,
 .footer .social-list-link:focus {
   background-color: var(--accent-text-color);
@@ -615,8 +632,7 @@ ul {
 
   transition: color var(--time-animation) var(--animation),
     background-color var(--time-animation) var(--animation),
-    box-shadow var(--time-animation) var(--animation),
-    cursor var(--time-animation) var(--animation);
+    box-shadow var(--time-animation) var(--animation);
 }
 .work-examples .button:hover,
 .work-examples .button:focus {
