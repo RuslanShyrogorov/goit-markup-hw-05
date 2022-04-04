@@ -209,9 +209,24 @@ ul {
   color: var(--accent-text-color);
 }
 .site-nav-list .link.current {
+  position: relative;
   color: var(--accent-text-color);
 }
 
+.site-nav-list .current::after{
+  content: "";
+
+  display: block;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+}
 .contacts-list .link {
   color: var(--primary-text-color);
   text-decoration: none;
